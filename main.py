@@ -2,7 +2,6 @@ import argparse
 import boto3
 
 ec2 = boto3.resource('ec2')
-
 # Define command-line arguments
 parser = argparse.ArgumentParser(description='Create a VPC and an Internet Gateway')
 parser.add_argument('--name', metavar='NAME', type=str, required=True, help='name of the VPC')
